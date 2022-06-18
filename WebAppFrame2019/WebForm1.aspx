@@ -19,11 +19,9 @@
 
         </div>
         <div>
-            <asp:FileUpload ID="FileUpload1" runat="server" />
-            <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click"  />
-            <asp:Button ID="btnProcess" runat="server" Text="Process" OnClick="btnProcess_Click" />
-            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+            <a href="wfmCSVFileUpload.aspx">CSV File Upload</a>
         </div>
+        
     </form>
 </body>
 </html>
