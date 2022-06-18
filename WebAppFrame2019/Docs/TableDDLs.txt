@@ -1,0 +1,6 @@
+CREATE TABLE trandetail (
+tranDate DATE,
+tranAmount NUMBER(38,10),
+tranCategory VARCHAR2(50 BYTE),
+tranCompany VARCHAR2(50 BYTE),
+tranRemarks VARCHAR2(50 BYTE));
