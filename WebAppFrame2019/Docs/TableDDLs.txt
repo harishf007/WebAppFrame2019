@@ -1,6 +1,52 @@
+--TestTable table
+------------------
+CREATE TABLE testtable (
+remark VARCHAR2(255 BYTE));
+------------------------------------------------------------
+--TranDetail table
+-------------------
 CREATE TABLE trandetail (
 tranDate DATE,
 tranAmount NUMBER(38,10),
 tranCategory VARCHAR2(50 BYTE),
 tranCompany VARCHAR2(50 BYTE),
 tranRemarks VARCHAR2(50 BYTE));
+--------------------------------------------------------------
+--AppUsers table
+-----------------
+CREATE TABLE appusers (
+userID VARCHAR2(10 BYTE),
+userName VARCHAR2(50 BYTE),
+userLevel VARCHAR2(10 BYTE),
+createID VARCHAR2(10 BYTE),
+createName VARCHAR2(50 BYTE),
+createDate DATE,
+lastModID VARCHAR2(10 BYTE),
+lastModName VARCHAR2(50 BYTE),
+lastModDate DATE,
+loginStatus VARCHAR2(2 BYTE),
+loginAttempts VARCHAR2(1 BYTE),
+passLockDate DATE,
+passCrDate DATE,
+passExDate DATE );
+---------------------------------------------------------------
+--AppUserLevels table
+----------------------
+CREATE TABLE appuserlevels (
+userLevel VARCHAR2(10 BYTE),
+userLevelName VARCHAR2(50 BYTE));
+---------------------------------------------------------------
+--AppUserLevelOptions table
+----------------------------
+CREATE TABLE appuserleveloptions (
+ulSystem VARCHAR2(50 BYTE),
+ulOption VARCHAR2(50 BYTE),
+ulDescription VARCHAR2(50 BYTE));
+---------------------------------------------------------------
+--AppUserLevelRightsGiven table
+--------------------------------
+CREATE TABLE appuserlevelrightsgiven (
+userLevel VARCHAR2(10 BYTE),
+ulSystem VARCHAR2(50 BYTE),
+ulOption VARCHAR2(50 BYTE));
+---------------------------------------------------------------

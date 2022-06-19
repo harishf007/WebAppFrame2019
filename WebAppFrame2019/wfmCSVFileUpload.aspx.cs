@@ -81,7 +81,7 @@ namespace WebAppFrame2019
                         sqlStmt = " INSERT INTO trandetail ( " +
                             " trandate, tranamount, trancategory, trancompany, tranremarks " +
                             " ) VALUES ( " +
-                            " '" + strSqlDate + "'," +
+                            " TO_DATE('" + strSqlDate + "', 'dd-mon-yyyy')," +
                             " '" + floatAmount + "'," +
                             " '" + db.CleanSQLText(tranCategory) + "'," +
                             " '" + db.CleanSQLText(tranCompany) + "'," +

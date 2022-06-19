@@ -7,21 +7,23 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server">     
+        <h3>ASP.NET C# snippets</h3>
         <div>
-            <asp:Button ID="Button1" runat="server" Text="Submit_Test_Data" OnClick="Button1_Click" />
-            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-        </div>
-        <div>
-
-            <asp:GridView ID="GridView1" runat="server">
-            </asp:GridView>
-
+            <a href="wfmSimpleDataGrid.aspx">Simple DataGrid</a>
         </div>
         <div>
             <a href="wfmCSVFileUpload.aspx">CSV File Upload</a>
         </div>
-        
+        <div>
+            <a href="wfmEncryptnMask.aspx">Masking and Encryption</a>
+        </div>
+        <div>
+            <a href="wfmDatePicker.aspx">DatePicker</a>
+        </div>  
+        <div>
+            <a href="wfmSampleModal.aspx">Sample Modal</a>
+        </div>
     </form>
 </body>
 </html>

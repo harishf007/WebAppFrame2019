@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS Files to be linked inside the head tag -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      [class*="col"] {
+        padding: 1rem;
+        background-color: aqua;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- To create this html boiler plate just input '!' and press 'tab'-->
+    <!-- Js files to be linked inside the body tag after all the body elements -->
+    <div class="container border">
+      <div class="row">
+        <div class="col-md-8 col-sm-6">Col 1</div>
+        <div class="col">Col 2</div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col">data 01</div>
+        <div class="col">data 02</div>
+        <div class="col">data 03</div>
+      </div>
+      <div class="row">
+        <li>Subline number 1</li>
+        <li>Subline number 2</li>
+        <li>Subline number 3</li>
+      </div>
+      <div class="row">
+        <div class="col">Column 1</div>
+        <div class="col">Column 2</div>
+        <div class="col">Column 3</div>
+        <div class="col">Column 4</div>
+        <div class="col">Column 5</div>
+      </div>
+    </div>
+
+    <!-- In order for the bootstrap.js to work, you need to have popper.min.js inside the folder with the html file-->
+    <!-- by using the bootstrap.bundle.js you can have all the depenedencies loaded all at once including popper.-->
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
